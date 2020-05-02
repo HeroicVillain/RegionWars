@@ -31,9 +31,9 @@ auto-deploy2:
  script:
  - cd BackEnd/springboot_backend/
  - mvn package
- - sudo mv target/*.jar /target/web-demo.jar
- - sudo systemctl stop web-demo
- - sudo systemctl start web-demo
+ - sudo mv target/*.jar /RegionWarsServer/web-demo.jar
+ - sudo systemctl stop RegionWars.service
+ - sudo systemctl start RegionWars.service
 
 
 auto-deploy3:
@@ -48,9 +48,9 @@ auto-deploy3:
  script:
  - cd BackEnd/springboot_backend/
  - mvn package
- - sudo mv target/*.jar /target/web-demo.jar
- - sudo systemctl stop web-demo
- - sudo systemctl start web-demo
+ - sudo mv target/*.jar /RegionWarsServer/web-demo.jar
+ - sudo systemctl stop RegionWars.service
+ - sudo systemctl start RegionWars.service
  
 
 flutter-test:
@@ -77,4 +77,3 @@ flutter-build:
  - flutter pub get && flutter clean && flutter build apk --debug --target-platform android-arm,android-arm64 --split-per-abi
  - sudo mv build/app/outputs/apk/debug/app-arm64-v8a-debug.apk /target/app-arm64.apk
  - sudo mv build/app/outputs/apk/debug/app-armeabi-v7a-debug.apk /target/app-armeabi.apk
-
