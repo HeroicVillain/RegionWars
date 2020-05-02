@@ -1,12 +1,8 @@
 package com.anthonyOleinik.myApp.entities;
 
-import javax.management.relation.Role;
 import javax.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-
-import org.hibernate.annotations.*;
-
 import java.io.Serializable;
 import java.util.Set;
 

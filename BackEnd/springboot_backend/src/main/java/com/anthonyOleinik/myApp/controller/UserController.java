@@ -9,13 +9,10 @@ import com.anthonyOleinik.myApp.entities.FactionEntity;
 import com.anthonyOleinik.myApp.entities.RolesEntity;
 import com.anthonyOleinik.myApp.entities.UserConnections;
 import com.anthonyOleinik.myApp.entities.UserEntity;
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 

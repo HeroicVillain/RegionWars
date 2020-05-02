@@ -2,11 +2,9 @@ package com.anthonyOleinik.myApp.sockets;
 
 import com.anthonyOleinik.myApp.entities.GameState.GameState;
 import com.anthonyOleinik.myApp.entities.GameState.InGameUser;
-import com.anthonyOleinik.myApp.sockets.socketMessages.GameStateWrapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
@@ -14,7 +12,6 @@ import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

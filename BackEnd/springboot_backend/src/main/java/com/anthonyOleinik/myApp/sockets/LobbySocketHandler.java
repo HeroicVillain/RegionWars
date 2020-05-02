@@ -3,7 +3,6 @@ package com.anthonyOleinik.myApp.sockets;
 import com.anthonyOleinik.myApp.entities.GameState.GameState;
 import com.anthonyOleinik.myApp.sockets.socketMessages.LobbyMessage;
 import com.google.gson.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;

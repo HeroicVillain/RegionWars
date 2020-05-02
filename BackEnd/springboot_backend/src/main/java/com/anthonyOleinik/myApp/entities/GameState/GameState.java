@@ -22,15 +22,6 @@ public class GameState {
     private boolean gameOver = false;
     private int winner;
 
-    /*public GameState(ArrayList<Integer> playerIds){
-        this.currPlayer = playerIds.get(0);
-        for (int playerId : playerIds){
-            this.users.add(new InGameUser(playerId));
-        }
-
-        this.board = new GameBoard(playerIds, initTroop, initAITroop, mapSeed);
-    }*/
-
     //TODO: if we want to re-integrate account creation
     //we can pass the goog id in handhake headers and find their account
     //from that, then we can pass a user account into InGameUser instead.
@@ -65,11 +56,7 @@ public class GameState {
             if(playerTiles.get(userid) > board.getTiles().size()*.35){
                 winner = userid;
                 gameOver = true;
-               // System.out.println(user.getUserName() + " has won the game controlling ["
-               // + playerTiles.get(user) +"] tiles");
             }
-           // System.out.println(user.getUserName() +" controls ["+ playerTiles.get(user) + "/"
-            //        + board.getTiles().size() + "] tiles.");
         });
     }
 
